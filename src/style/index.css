@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-prime);
+}
+
+:root{
+    --body-prime: #052424;
+    --nav: #010300;
+    --name: #5a7f78;
+
+    --font-prime: Montserrat;
+    --font-seg: Lobster;
+}
+
+body{
+    background-color: var(--body-prime);
+}
+
+#nav-container{
+    width: 100%;
+    height: 110px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--name);
+    background-color: var(--nav);
+    padding: 16px;
+}
+
+#nav-container h1 {
+    font-family: var(--font-seg);
+    font-size: 38px;
+}
+
+.nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+   
+    font-family: var(--font-prime);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.nav li {
+    list-style: none;
+   
+}
+
+.nav li:hover{
+    transform: scale(1.2);
+}
+
+.nav a{
+    padding: 10px;
+    text-decoration: none;
+    color: var(--name);
+}
+
+.nav a:hover{
+    color: #2a8399;
+    
+}
+
+#main-container{
+    width: 70%;
+    height: 500px;
+    background-color: #052c2c;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 120px auto 0 auto;
+}
+
+.content-container{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+
+.content-container img {
+    border-radius: 50%;
+    width: 300px;
+}
+
+
+.content h1 {
+    font-family: var(--font-seg);
+    font-size: 34px;
+    color: rgb(168, 160, 160);
+    margin-bottom: 24px;
+   
+}
+
+.content p{
+    font-family: var(--font-prime);
+    color: aliceblue;
+    font-weight: 700;
+    line-height: 25px;
+}
+
+#footer{
+    font-family: var(--font-prime);
+    font-size: 24px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 200px;
+}
+
+
+@keyframes aniImg {
+    0% {
+        margin-left: 100%;
+        
+      }
+    
+      100% {
+        margin-left: 0%;
+      }
+}
+
+
